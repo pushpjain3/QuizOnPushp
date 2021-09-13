@@ -14,6 +14,16 @@ const questionAnswerSet = [
     answer: "Sonepat"
   },
   {
+    question: "What is Pushp's favorite sport?",
+
+    answer: "football"
+  },
+  {
+    question: "What Pushp likes more, dogs or cats? ",
+
+    answer: "cats"
+  },
+  {
     question: "Is Pushp a good boi? ",
 
     answer: "yes"
@@ -22,7 +32,7 @@ const questionAnswerSet = [
 var highScores = [
   {
     name: "Anant",
-    score: 3
+    score: 4
   },
   {
     name: "Daxu",
@@ -35,7 +45,7 @@ var highScores = [
 ]
 
 const play = (username) => {
-  for(i = 0 ; i<3; i++){
+  for(i = 0 ; i<5; i++){
     var userAnswer = readLineSync.question(chalk.bold("Q"+(i+1)+". "+ chalk.underline(questionAnswerSet[i].question))+"\n\t");
     if(userAnswer.toUpperCase() === questionAnswerSet[i].answer.toUpperCase()){
       console.log(chalk.green("\tYou are right!"));
